@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="s.css">
+</head>
+
+<body>
+    <div class="main">
+        <header>
+            <h1 id="title">Html and CSS Survey Form</h1>
+            <p id="description">thanks for taking the time to improve my skills</p>
+        </header>
+        <hr class="hori">
+        <form action="submit" id="survey-form">
+            <div>
+                <label for="name" id="name-label" class="s">Name :</label>
+                <input type="text" id="name" placeholder="Enter your name" required class="s1 s2">
+            </div>
+            <div>
+                <label for="email" id="email-label" class="s">E-mail :</label>
+                <input type="email" id="email" placeholder="Enter your E-mail" required class="s1 s2" >
+            </div>
+            <div>
+                <label for="number" id="number-label" class="s">Age : <span>(Optional)</span></label>
+                <input type="number" id="number" placeholder="Enter your age" min="16" max="100" class="s1" >
+            </div>
+            <div>
+                <p class="s pin">Select your city</p>
+                <select name="" id="dropdown" class="s1">
+                    <option value="ahmedabad">
+                        Ahmedabad
+                    </option>
+                    <option value="surat">
+                        Surat
+                    </option>
+                    <option value="none" selected >
+                        None
+                    </option >
+                </select>
+            </div>
+            <div>
+                <p class="s pin">Which language do you like most.</p>
+                <label class="pcolor"><input type="radio" name="lang" value="html"> HTML</label>
+                <label class="pcolor"><input type="radio" name="lang" value="css"> CSS</label>
+                <label class="pcolor s1"><input type="radio" name="lang" value="both" "> Both</label>
+            </div>
+            <div>
+                <p class="s pin">Select your favourite Characters</p>
+                <label class="clor"><input type="checkbox" value="luffy"> Luffy</label>
+                <label class="clor"><input type="checkbox" value="naruto"> Naruto</label>
+                <label class="clor"> <input type="checkbox" value="gojo"> Gojo Satoru</label>
+                <label class="clor"> <input type="checkbox" value="kakasi"> Kakasi Hatake</label>
+                <label class="clor s1"> <input type="checkbox" value="anos"> Anos voldigos</label>
+            </div>
+            <div>
+                <p class="s pin">Tell us why you like your Characters ?</p>
+                <textarea name="comm" id="comment" cols="40" rows="5" placeholder="Pls Enter your answer here" class="s1 s2"></textarea>
+            </div>
+            <hr class="hori">
+            <div>
+                <input type="button" id="submit" class="sub" value="Submit">
+            </div>
+        </form>
+    </div>
+</body>
+
+</html>
